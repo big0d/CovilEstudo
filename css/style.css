@@ -1,0 +1,231 @@
+*{
+    margin: 0; /*zerar as extremidades*/
+    padding: 0; /*espaçamento interno*/
+    font-size: 100%; /*100% do tamanho*/
+    font-family: 'Poppins', sans-serif; /*estilo de fonte*/
+    font-weight: normal; /*largura da letra*/
+    box-sizing: border-box; /*preenchimento da caixinha do elemento*/
+    border: none; /*sem borda*/
+    outline: none; /*linha de fundo*/
+}
+
+body{
+    background-color: #1b1b1b;
+}
+
+img{
+    max-width: 100%; /*tamanho maximo*/
+}
+
+ul{
+    list-style: none;
+}
+
+/*anchor*/
+a{
+    text-decoration: none; /*tira a decoração que vem por padrão*/
+}
+
+h2{
+    font-size: 1.5em;
+    color: #d8d8d8;
+}
+
+p{
+    font-size: 1em;
+    color: #d8d8d8;
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    width: 100%; /* largura de 100% da página */
+    float: left; /* flutuar a esquerda */
+    padding: 50px 8%; /* espaçamento interno de 50px absoluto e 8% relativo para ser melhor responsivo */
+    background-color: #1b1b1b;
+}
+
+.logo a{
+    width: 221px;
+    height: 48px;
+    float: left;
+    background: url(../img/logo.png) no-repeat; /* o ../ é sempre saída para voltar uma pasta e acessar arquivos de outros lugares. no repet nao repete a imagem */
+    font-size: 0; /* para zerar o texto */
+}
+
+.cabecalho form{
+    width: 30%;
+    float: right;
+}
+
+.cabecalho form input[type="text"]{
+    width: 85%;
+    float: left;
+    padding: 15px 10px;
+    border-radius: 5px 0 0 5px;
+    /* colocar 0 nos lugares que nao devem ser arredondados e arredondar como quiser os outros */
+}
+
+.cabecalho button{
+    width: 15%; /* meu cabeçalho tem 100%, 15% é pro botão, 80% input */
+    float: right;
+    padding: 15px 10px;
+    background-color: #2b2b2b;
+    color: #fff;
+    cursor: pointer; /* muda o estilo do mouse quando vc passa em cima do objeto */
+    border-radius: 0 5px 5px 0;
+}
+
+/* menu */
+.menu{
+    width: 100%;
+    float: left;
+    background-color: #111;
+    padding: 18px 8%;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu li a{
+    color: #d3d3d3;
+    margin-right: 25px;
+}
+
+.menu li a:hover{
+    color: rgb(36, 175, 255);
+}
+
+.social-icons{
+    float: right;
+}
+
+.social-icons a{
+    color: rgb(228, 228, 228);
+    float: left;
+    margin-left: 12px;
+    font-size: 115%;
+}
+
+.btn-reddit:hover{
+    color: #ff5429;
+}
+
+.btn-github:hover{
+    color: #aa53cc;
+}
+
+.btn-twitter:hover{
+    color: #3c98e4;
+}
+
+/* principal/main */
+.principal{
+    width: 100%;
+    float: left;
+    padding: 20px 8%;
+}
+
+.sobre{
+    width: 70%;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.sobre h2{
+    margin-bottom: 15px;
+}
+
+.sobre img{
+    width: 50%;
+    float: left;
+    border-radius: 5px;
+    margin: 0 15px 15px 0;
+}
+
+.sobre p{
+    text-align: justify; /* deixar texto com margens retas direita e esquerda */
+}
+
+/* sidebar */
+.onde-estamos{
+    width: 30%;
+    float: right;
+    padding: 10px 20px;
+    background-color: #2b2b2b;
+    border-radius: 5px;
+}
+
+.onde-estamos h2{
+    margin-bottom: 5px;
+    color: #a8a8a8;
+}
+
+.onde-estamos iframe{
+    width: 100%;
+    height: 250px;
+    margin: 20px 0;
+}
+
+.onde-estamos li{
+    color: #a8a8a8;
+    margin-bottom: 10px;
+}
+
+.onde-estamos i{
+    margin-right: 7px;
+}
+
+.newsletter{
+    width: 100%;
+    float: left;
+    background-color: #111;
+    padding: 50px 8%;
+}
+
+.newsletter h3{
+    font-size: 1.8em;
+    color: rgb(228, 228, 228);
+}
+
+.newsletter p{
+    font-size: 1.2em;
+    color: rgb(228, 228, 228);
+}
+
+.newsletter form{
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+.newsletter form input{
+    width: 40%;
+    margin-right: 1%;
+    padding: 10px 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    color: #f1f1f1;
+    background-color: initial;
+    float: left;
+}
+
+.newsletter button{
+    width: 18%;
+    background-color: #f1f1f1;
+    padding: 10px 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer; /* tornar clicável ao passar o mouse */
+}
+
+.rodapé{
+    width: 100%;
+    float: left;
+    background-color: #111;
+    padding: 20px 8%;
+}
+
+.rodapé p{
+    color: #a8a8a8;
+}
